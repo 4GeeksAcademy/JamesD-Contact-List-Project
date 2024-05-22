@@ -6,9 +6,9 @@ import React from "react";
 const ContactCard = ({name, address, phone, email}) => {
 
     return (
-        <>
-            <div>
-                <div className="contact">
+        <div className="row d-flex justify-content-center">
+            <div className="col-3 d-flex justify-content-center">
+                <div className="contact card" style={{width:"18rem"}}>
                     <img  src="https://xsgames.co/randomusers/avatar.php?g=pixel" /> 
                     <div className="contact-info">
                         <p className="contact-name">{name}</p>
@@ -18,7 +18,7 @@ const ContactCard = ({name, address, phone, email}) => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 
